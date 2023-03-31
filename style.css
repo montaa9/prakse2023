@@ -1,0 +1,1047 @@
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: none;
+    transition: .2s linear;
+}
+ html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+} 
+section{
+    padding:2rem 9%;
+}
+/* Virsraksti */
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#333;
+    padding:1rem;
+    margin:2rem 0;
+    margin-top: auto;
+    background:rgba(223, 222, 223, 0.615);
+}
+/* Navigācija */
+header{
+    position: sticky;
+    top:0; left:0; right:0;
+    background:#ffffff;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(225, 11, 122, 0.749);
+}
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+}
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:#666;
+}
+header .navbar a:hover{
+    color:rgba(232, 117, 176, 0.544);
+}
+header .icons a{
+    font-size: 2.5rem;
+    color:#333;
+    margin-left: 1.5rem;
+}
+header .icons a:hover{
+    color:rgba(252, 20, 140, 0.703);
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color:#333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+/* Sākumlapa */
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(images/background.avif) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 50rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    color:#333;
+}
+.home .content p{
+    font-size: 1.5rem;
+    color:#000000;
+    padding:1rem 0;
+    line-height: 1.5;
+}
+.hbtn{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background:#ffffff;
+  color:#000000;
+  padding:.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.hbtn:hover{
+  background:rgb(236, 196, 236);
+}
+/* Par veikalu */
+.about{
+  background-color: #db325d34;
+}
+.aboutuscontainer {
+  margin: 20px 40px;
+}
+.whatwedo {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+} 
+.wedo {
+  flex-basis: 260px;
+}
+.wedo .wedo-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+}
+.wedoh {
+    margin-top: 30px;
+    font-size: 35px;
+}
+  .wedo h5 {
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #ccc;
+  }
+  .wedo p {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+.icons-container{
+    background:#db325d34;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.icons-container .icons{
+    background:#fff;
+    border:.1rem solid rgba(0,0,0,.1);
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    flex:1 1 25rem;
+    box-shadow: 0 .5rem 1.5rem #db2d587c;
+}
+.icons-container .icons img{
+    height:5rem;
+    margin-right: 2rem;
+}
+.icons-container .icons h3{
+    color:#333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.icons-container .icons span{
+    color:#555;
+    font-size: 1.3rem;
+}
+/* Atsauksmju sadaļa */
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.review .box-container .box{
+    flex:1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(230, 34, 151, 0.711);
+    border-radius: .5rem;
+    padding:3rem 2rem;
+    position: relative;
+    border:.1rem solid rgba(230, 34, 151, 0.711);
+    background-color: #f0d8e6c1;
+}
+.review .box-container .box p{
+    color:#0b0b0b;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+.review{
+    background-color: #f5d2f06e;
+}
+/* Atsauksmju rakstīšana */
+.write{
+  background-color: #e2adc5c4;
+  min-height: 600px;
+}
+.wrcontainer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+.wrcontact-box{
+  width: 750px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  margin: auto;
+  box-shadow: 0px 0px 19px 5px rgba(241, 89, 180, 0.581);
+}
+.wrright{
+  padding: 25px 40px;
+}
+h2{
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+}
+.wrfield{
+  width: 100%;
+  border: 2px solid rgba(225, 204, 230, 0.805);
+  outline: none;
+  background-color: rgba(242, 213, 242, 0.723);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: .3s;
+}
+.wrfield:hover{
+  background-color: rgba(239, 224, 236, 0.719);
+}
+textarea{
+  min-height: 150px;
+}
+.wrbtn{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #efb2cd;
+  color: #fff;
+  font-size: 1.1rem;
+  border: solid 3px #f3aecc;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+}
+.wrtbtn:hover{
+    background-color: #f3c1d7;
+}
+.wrfield:focus{
+    border: 2px solid rgba(255, 0, 225, 0.47);
+    background-color: #fff;
+}
+/* Footer sadaļa */
+.footer {
+  padding: 40px 0;
+  background-color: #f4e5e5;
+}
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #000000;
+}
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+/* Produktu sadaļa */
+.prod {
+  margin: auto;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  width: 1000px;
+  height: 300px;
+  text-align: center;
+  background-color: #ef84b843;
+}
+.prod .name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.prod .ppic {
+  height: 300px;
+  width: 300px;
+  float: left;
+}
+.prod .ppic img {
+  max-width: 100%;
+  max-height: 100%;
+  border: white solid 4px;
+}
+.prod .descrip {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+.prod .price {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+}
+.prod .bbutn {
+  margin-top: 70px;
+}
+.usbtn {
+  float: left;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background:#fe6fc0a2;
+  color:#fff;
+  padding:.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  border: #000000 2px solid;
+}
+.product {
+  width: 200px;
+  height: 200px;
+}
+/* Contact us sadaļa */
+.contact{
+  background-color: rgba(190, 150, 178, 0.723);
+}
+.contactcontainer{
+position: relative;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px 100px;
+}
+.contactcontact-box{
+max-width: 850px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: #fff;
+box-shadow: 0px 0px 19px 5px rgba(241, 89, 180, 0.581);
+}
+.contactleft{
+background: url("images/candle2.jpg") no-repeat center;
+background-size: cover;
+height: 100%;
+}
+.contactright{
+padding: 25px 40px;
+}
+h2{
+position: relative;
+padding: 0 0 10px;
+margin-bottom: 10px;
+}
+.contactfield{
+width: 100%;
+border: 2px solid rgba(225, 204, 230, 0.805);
+outline: none;
+background-color: rgba(242, 213, 242, 0.723);
+padding: 0.5rem 1rem;
+font-size: 1.1rem;
+margin-bottom: 22px;
+transition: .3s;
+}
+.contactfield:hover{
+background-color: rgba(239, 224, 236, 0.719);
+}
+textarea{
+min-height: 150px;
+}
+.contactbtn{
+width: 100%;
+padding: 0.5rem 1rem;
+background-color: #efb2cd;
+color: #fff;
+font-size: 1.1rem;
+border: solid 3px #f3aecc;
+outline: none;
+cursor: pointer;
+transition: .3s;
+}
+.contactbtn:hover{
+  background-color: #f3c1d7;
+}
+.contactfield:focus{
+  border: 2px solid rgba(255, 0, 225, 0.47);
+  background-color: #fff;
+}
+/* Errors paziņojumi */
+.errors_list {
+  position: sticky;
+ top:0;
+ max-width: 1200px;
+ padding:1.5rem 2rem;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ z-index: 500;
+ background-color: pink;
+ margin:0 auto;
+ margin-bottom: 1rem;
+ color: black;
+  font-size: 2rem;
+}
+/* errors teksts */
+.errors_list span, #error span{
+  color: var(--black);
+  font-size: 2rem;
+}
+/* Krustiņi error paziņojumiem*/
+.errors_list i,  #error i{
+  color: var(--black);
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+/*Spiezot virsū krusstiņiem */
+.errors_list i:hover, #error i:hover{
+  color:var(--dark_pink);
+}
+#error{
+  color: black;
+  font-size: 2rem;
+  position: sticky;
+ top:0;
+ max-width: 1200px;
+ padding:1.5rem 2rem;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ z-index: 500;
+ margin:0 auto;
+ margin-bottom: 1rem;
+}
+/* Visi lietotāji */
+.allusers{
+  background-color: #fba6d090;
+  min-height: 600px;
+}
+.alltable {
+  width: 100%;
+  border-collapse: collapse;
+}
+.alltd,
+.allth {
+  padding: 12px 15px;
+  border: 3px solid #000000;
+  text-align: center;
+  font-size: 16px;
+}
+.allth {
+  background-color: rgb(235, 158, 208);
+}
+.alltable{
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Messages for admin sadaļa */
+.messages{
+  background-color: #f1a0d350;
+}
+.message-box {
+  margin: auto;
+  width: 900px;
+  border: 3px solid #000000;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.message-box p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.message-box p:not(:first-child) {
+  font-size: 14px;
+  font-weight: normal;
+}
+/* Autentifikācijas sadaļa */
+.logincontainer{
+  max-width: 840px;
+  padding: 0 20px;
+  margin: 100px auto;
+}
+.loginwrapper{
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(254, 1, 182, 0.282);
+}
+.loginwrapper .logintitle{
+  height: 90px;
+  background: #9129696e;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginwrapper form{
+  padding: 30px 25px 25px 25px;
+}
+.loginwrapper form .loginrow{
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.loginwrapper form .loginrow input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid rgb(211, 211, 211);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+form .loginrow input:focus{
+  border-color: #9129696e;
+  box-shadow: inset 0px 0px 2px 2px rgba(230, 71, 222, 0.25);
+}
+form .loginrow input::placeholder{
+  color: #999;
+}
+.loginwrapper form .loginrow i{
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  background: #9129696e;
+  border: 1px solid #9129696e;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginwrapper form .button input{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #9129696e;
+  border: 1px solid #9129696e;
+  cursor: pointer;
+}
+form .button input:hover{
+  background: #82245e6e;
+}
+.loginwrapper form .loginsignup-link{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.loginwrapper form .loginsignup-link a{
+  color: #9129696e;
+  text-decoration: none;
+}
+form .loginsignup-link a:hover{
+  text-decoration: underline;
+}
+/* Reģistrācija */
+.registercontainer{
+  max-width: 840px;
+  padding: 0 20px;
+  margin: 10px auto;
+}
+.registerwrapper{
+  width: 100%;
+  background: #fef3ff3c;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(254, 1, 182, 0.282);
+}
+.registerwrapper .registertitle{
+  height: 90px;
+  background: #9129696e;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.registerwrapper form{
+  padding: 30px 25px 25px 25px;
+}
+.registerwrapper form .registernrow{
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+form .registerrow input:focus{
+  border-color: #9129696e;
+  box-shadow: inset 0px 0px 2px 2px rgba(230, 71, 222, 0.25);
+}
+form .registerrow input::placeholder{
+  color: black;
+}
+.registerwrapper form .button input{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #9129696e;
+  border: 1px solid #9129696e;
+  cursor: pointer;
+}
+form .button input:hover{
+  background: #c1799a42;
+}
+.registerwrapper form .registersignup-link{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.registerwrapper form .registersignup-link a{
+  color: #9129696e;
+  text-decoration: none;
+}
+form .registersignup-link a:hover{
+  text-decoration: underline;
+}
+.registerp{
+  font-size:large;
+  font-weight: bold;
+}
+/* Iepirkuma grozs */
+.cart{
+  background-color: rgba(255, 192, 203, 0.392);
+  min-height: 600px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: #0b0b0b 1px solid;
+}
+th {
+  background-color: #e474b46e;
+  color: #000000;
+  font-size: large;
+}
+td img.product {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+button {
+  background-color: #b8115f;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
+/* Lietotāja profils */
+.userprof{
+  background-color: #e2adc5c4;
+  min-height: 600px;
+}
+.profile-container {
+  width: 80%;
+  margin: 50px auto;
+  background-color: #d0adcd8f;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.profile_heading {
+margin-bottom: 20px;
+text-align: center;
+font-size: 25px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+ gap: 20px;
+}
+.inputBox span {
+font-weight: bold;
+font-size: 15px;
+}
+.inputBox p{
+  font-size: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f0f0f0;
+  width: 100%;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e49ce2;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+/* Produktu ievietošana un atjaunošana */
+.incontainer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+.incontact-box{
+  max-width: 750px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  margin: auto;
+  box-shadow: 0px 0px 19px 5px rgba(241, 89, 180, 0.581);
+}
+.inright{
+  padding: 25px 40px;
+}
+h2{
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+}
+.infield{
+  width: 100%;
+  border: 2px solid rgba(225, 204, 230, 0.805);
+  outline: none;
+  background-color: rgba(242, 213, 242, 0.723);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: .3s;
+}
+.infield:hover{
+  background-color: rgba(239, 224, 236, 0.719);
+}
+textarea{
+  min-height: 150px;
+}
+.inbtn{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #efb2cd;
+  color: #fff;
+  font-size: 1.1rem;
+  border: solid 3px #f3aecc;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+}
+.intbtn:hover{
+    background-color: #f3c1d7;
+}
+.infield:focus{
+    border: 2px solid rgba(255, 0, 225, 0.47);
+    background-color: #fff;
+}
+
+  /* Media */
+  @media screen and (max-width: 768px){
+    html{
+      font-size: 55%;
+  }
+  header{
+      padding:2rem;
+  }
+  section{
+      padding:2rem;
+  }
+  .home{
+      background-position: left;
+  }
+header .fa-bars{
+    display: block;
+}
+header .navbar{
+    position:absolute;
+    top:100%; left:0; right:0;
+    background:#eee;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+header #toggler:checked ~ .navbar{
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+header .navbar a{
+    position: sticky;
+    margin:1.5rem;
+    padding:1.5rem;
+    background:#fff;
+    border:.1rem solid rgba(0,0,0,.1);
+    display: block;
+}
+.home .content h3{
+    font-size: 5rem;
+}
+.home .content span{
+    font-size: 2.5rem;
+}
+.icons-container .icons h3{
+    font-size: 2rem;
+}
+.icons-container .icons span{
+    font-size: 1.7rem;
+}
+.home{
+  display: flex;
+  align-items: center;
+  background:url(images/background.avif) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.prod {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.prod .ppic {
+  height: 200px;
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.prod .descrip {
+  margin-left: 0;
+}
+.prod .price {
+  float: none;
+  margin-top: 20px;
+}
+.prod .bbutn {
+  float: none;
+  margin-top: 20px;
+}
+.contactcontact-box{
+  grid-template-columns: 1fr;
+}
+.contactleft{
+  height: 200px;
+}
+.whatwedo {
+  flex-direction: column;
+}
+.wedo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wedo p {
+  text-align: center;
+  margin: 20px 60px 80px 60px;
+  font-size: 20px;
+}
+.heading {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.heading span {
+  font-size: 15px;
+}
+.profiles {
+  margin: 20px 0;
+}
+.profile p {
+  margin: 20px 10px 80px 10px;
+}
+.allthead{
+  display: none;
+  }
+.alltable, .alltable tbody, .alltable tr, .alltable td{
+  display: block;
+  width: 100%;
+}
+.alltable tr{
+  margin-bottom: 15px;
+} 
+.alltable td{
+  text-align: right;
+  padding-left: 50%;
+  position: relative;
+  border: none;
+  border-bottom: 3px solid #000000;
+}
+.alltable td::before{
+  content: attr(data-label);
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 45%;
+  padding-right: 10px;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+} 
+.alltable td:nth-of-type(1)::before{
+  content: "Id";
+  }
+.alltable td:nth-of-type(2)::before{
+  content: "Vārds";
+}
+.alltable td:nth-of-type(3)::before{
+  content: "Uzvārds";
+}
+.alltable td:nth-of-type(4)::before{
+  content: "E-pasts";
+}
+.alltable td:nth-of-type(5)::before{
+  content: "Reģistrācijas datums";
+}
+.alltable td:nth-of-type(6)::before{
+  content: "Dzēst lietotāju";
+}
+.message-box {
+  width: 100%;
+}
+.message-box p {
+    font-size: 14px;
+}
+message-box p:not(:first-child) {
+    font-size: 12px;
+}
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-spacing: 0;
+} 
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  border: none;
+}
+th {
+  background-color: #e474b46e;
+  color: #000000;
+  font-size: large;
+  display: none;
+}
+td:first-child {
+  margin-top: 20px;
+}
+td img.product {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+button {
+  background-color: #b8115f;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
+.incontact-box{
+  grid-template-columns: 1fr;
+} 
+.profile-container {
+  width: 80%;
+}
+.insert-box {
+  width: 80%;
+}
+  }
