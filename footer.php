@@ -9,7 +9,7 @@
           <p>E-pasts: CandleShop@mail.com</p>
         </li>
         <li>
-          <p>Adrese: Latvia, Riga, iela 15</p>
+          <p>Adrese: Latvia, Riga, čaka iela 52</p>
         </li><br>
        
 
